@@ -1,0 +1,722 @@
+i:hover{
+	color: red;
+}
+
+header{
+	position: relative;
+}
+
+.header-info-left ul{
+margin: 0px;
+padding: 0px;
+}
+
+.header-info-left ul li{
+	list-style: none;
+	display: inline;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+
+.header-info-left ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.header-info-right ul{
+	margin: 0px;
+padding: 0px;
+}
+
+.header-info-right ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+.header-info-right ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	padding: 0px 10px;
+	
+}
+
+.header-info-right ul li a i{
+	transition: all 0.5s;
+}
+
+.header-info-right ul li a i:hover{
+	transform: rotateY(180deg);
+}
+
+.header-info-right ul:first-child li{
+border-right: 1px solid lightgray;
+}
+
+.header-top{
+	border-bottom: 1px solid lightgray;
+padding: 8px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 999;
+background: white;
+}
+
+nav ul, .header-icons ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul li, .header-icons ul li{
+	display: inline-block; 
+	position: relative;
+}
+
+.header-icons ul li a{
+font-size: 24px;
+padding: 10px !important;
+}
+
+.search-icon i{
+	font-size: 24px;
+	padding: 10px !important;
+	cursor: pointer;
+}
+
+
+nav ul li a, .header-icons ul li a{
+	display: block;
+	padding: 20px 20px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+transition: all 0.5s;
+font-weight: 600;
+}
+
+.dropdown{
+padding: 20px 20px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+transition: all 0.5s;
+font-weight: 600;
+cursor: pointer;
+}
+
+nav ul li a:hover , .header-icons ul li a:hover, .dropdown:hover{
+	color: red;
+}
+
+nav ul li:hover .submenu{
+	display: block;
+}
+
+.submenu{
+	margin-top: 20px;
+	width: 200px;
+	background: white;
+	position: absolute;
+	z-index: 999;
+	display: none;
+	padding: 10px;
+	text-align: left;
+/*	margin-left: -30px !important;*/
+	padding: 0px;
+	border-radius: 5px;
+	border-top:5px solid red;
+	box-shadow: 1px 1px 4px 2px lightgray;
+}
+
+/*.submenu::before{
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: red;
+	transform: rotate(45deg);
+	top: -6%;
+	left: 10%;
+z-index: -999 !important;
+
+	}*/
+
+
+.submenu li{
+	display: block;
+margin: 0px;
+	padding: 0px;
+}
+
+.submenu li a{
+text-align: left;
+padding: 10px;
+}
+
+.submenu li a:hover{
+letter-spacing: 0.5px;
+}
+
+.header-middle{
+	position:fixed;
+	padding: 10px 0;
+z-index: 999;
+top: 41px;
+left: 0;
+right: 0;
+background: white;
+/*margin-top: 41px;*/
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.header-bottom{
+	margin-top: 125px;
+}
+
+.cart{
+	position: relative;
+}
+
+.cart-counter{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: red;
+	border-radius: 100%;
+	z-index: 998;
+	top: 5%;
+	left: 50%;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.cart:hover .cart-counter{
+	top: 0;
+}
+
+.shop-now a{
+	color: rgb(206,189,156);
+text-decoration: none;
+border-bottom: 3px solid rgb(206,189,156);
+padding: 3px 0;
+transition: all 0.5s;
+}
+
+.shop-now a:hover{
+	letter-spacing: 1px;
+}
+
+
+.small-menu i{
+font-size: 24px;
+cursor: pointer;
+}
+
+.small-menu-nav{
+	position: absolute !important;
+	background: rgb(76,76,76);
+	width: 100%;
+	top: 100%;
+	display: none;
+	text-align: left !important;
+	z-index: 999;
+}
+.small-menu-nav nav ul li{
+	display: block;
+	text-align: left;
+	
+}
+
+.small-menu-nav nav ul li a{
+	color: white;
+	text-align: left;
+}
+
+.small-menu-nav nav ul li .submenu{
+	top: 100%;
+	left: 45%;
+}
+
+.small-menu-nav nav ul li .submenu li a{
+	color: black;
+}
+
+#searchbar{
+	display: none;
+}
+/*.searchbar-main{
+
+}*/
+.searchbar{
+	background: red;
+	width: 100%;
+/*	justify-content: center;*/
+	align-items: center;
+	padding: 10px 10px 10px 10px;
+
+}
+
+.searchbar input{
+	width: 95%;
+	outline: none;
+	border: none;
+background: red;
+color: white;
+}
+
+.searchbar input::placeholder {
+	color: white;
+}
+.searchbar i{
+	margin-left: 20px;
+	font-size: 24px;
+	color: white;
+	cursor: pointer;
+}
+
+#menuclose{
+	display: none;
+}
+
+.submenu-small{
+	display: none;
+	padding: 10px;
+	font-weight: 500;
+	transition: all 1s;
+}
+
+nav ul li:hover .submenu-small{
+	display: block;
+transition: all 1s;
+}
+
+.icons-small-screen{
+	margin-top: 68px;
+}
+.icons-small-screen ul{
+margin: 0;
+padding: 0;
+}
+
+.icons-small-screen ul li{
+	display: inline-block;
+}
+
+.icons-small-screen ul li a{
+	display: block;
+	color: black;
+transition: all 0.5s;
+font-weight: 600;
+font-size: 24px;
+padding: 10px;
+text-align: center;
+}
+
+
+
+
+
+
+
+/*login and signup page*/
+
+.login-singup{
+	overflow: hidden;
+}
+
+.login-form, .signup-form{
+	 box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+	margin: 20px auto;
+padding: 50px;
+
+}
+.login-form h2, .login-form p, .signup-form h2, .signup-form p{
+	text-align: center;
+
+}
+.inputs{
+	margin-top: 40px;
+}
+.inputs>label{
+	font-weight: 600;
+}
+.inputs>input{
+	width: 100%;
+	height: 50px;
+	margin: 10px 0 20px 0;
+	outline: none;
+padding: 0 20px;
+border: 1px solid grey !important;
+}
+.inputs>input::placeholder{
+	font-size: 14px;
+	color: grey;
+}
+
+.signup{
+	margin-top: 80px !important;
+}
+
+.signup-form{
+	display: none;
+}
+
+
+/*@media only screen and (max-width: 768px){
+	.login-form, .signup-form{
+		width: 100%;
+	}
+}*/
+
+
+.carousel-caption{
+	top: 60%;
+}
+
+.carousel-caption h5, .carousel-caption p{
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	width: fit-content;
+	padding: 5px;
+}
+
+.cards{
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+.cards img{
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+	margin-top: 10px;
+}
+.cards h2{
+	position: absolute;
+	top:80%;
+	left: 10%;
+	color: white;
+	font-weight: 700;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 2px;
+}
+
+.cards span{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: orange;
+	font-weight: 700;
+	display: none;
+}
+
+.cards img:hover{
+transform: scale(1.03);
+
+}
+
+
+.cards:hover .shop-now{
+	display: block;
+}
+
+.cards-section{
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.trend-section{
+
+}
+
+.trend-nav{
+	margin: 0;
+	padding: 0;
+}
+
+.trend-nav li{
+	display: inline-block;
+
+}
+
+.trend-nav li a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 20px;
+	font-weight: 700;
+	border-bottom: 3px solid transparent;
+}
+
+.trend-nav li a:hover{
+	
+	border-bottom: 3px solid red;
+}
+
+/*.slider{
+	position: relative;
+}*/
+
+.images-slider{
+	margin-top: 30px;
+	margin-bottom: 100px;
+
+}
+
+.images-slider-img{
+	overflow: hidden;
+	position: relative;
+/*	background: red;*/
+text-align: center;
+cursor: pointer;
+}
+.images-slider-img>img{
+	transition: all 1s;
+	height: 280px;
+}
+.images-slider-img>img:hover{
+	transform: scale(1.03);
+}
+.images-slider-imgicons{
+	position: absolute;
+top:50%;
+left:20%;
+background: white;
+/*width: 60%;*/
+/*height: 50px;*/
+/*display: flex;
+justify-content: space-between;
+align-items: center;*/
+display: none;
+font-size: 24px;
+/*transform: translate(-50px, 0);*/
+}
+
+.images-slider-imgicons>i{
+	padding: 15px;
+	transition: all 0.5s;
+}
+.images-slider-imgicons>i:hover{
+	background: red;
+	color: white;
+	
+}
+
+
+.images-slider-img:hover .images-slider-imgicons{
+	display: block;
+}
+
+.images-slider-detail{
+	margin-top: 20px !important;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	display: block;
+	
+}
+
+.images-slider-img:hover .images-slider-detail{
+	color: red;
+}
+
+.images-slider-prize{
+margin-top: 5px ;
+margin-bottom: 10px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	display: block;
+
+}
+
+.images-slider-img:hover .images-slider-prize{
+	color: black;
+}
+.images-slider-img:hover .images-slider-prize del{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+
+.customer-testimonial{
+	background: rgb(243,234,216);
+	padding: 50px;
+}
+.carousel-item{
+	text-align: center;
+/*	padding: 50px;*/
+overflow: hidden;
+position: relative;
+
+}
+.carousel-item>p{
+	font-weight: 600;
+	font-size: 20px;
+	width: 60%;
+	margin: 0 auto;
+}
+.carousel-item h1{
+	margin: 10px 0 50px 0;
+	
+}
+.customer-name{
+	margin-left: 10px;
+	text-align: left;
+}
+.customer-name .web{
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.6);;
+	font-size: 16px;
+}
+.customer-name .name{
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.you-like{
+	margin-top: 100px;
+}
+
+.latest-news{
+	background: rgba(0, 0, 0, 0.1);
+	padding: 50px 0;
+}
+.card-mt{
+	margin-top: 50px;
+
+}
+
+
+.card-mt:hover .card-mt-h2{
+	color: red !important;
+}
+
+.read-more{
+	text-decoration: underline;
+	font-weight: 700;
+	transition: 0.5s;
+
+}
+.read-more:hover{
+letter-spacing: 0.6px !important;
+}
+
+.service{
+	text-align: center;
+	line-height: 30px;
+	margin-top: 30px;
+}
+.service-mt{
+	padding: 50px 0;
+}
+.service>i{
+font-size: 50px;
+margin-bottom: 20px;
+
+}
+.service>h4{
+
+margin-bottom: 20px;
+
+}
+.service>h6{
+
+color: grey;
+
+}
+
+.footer-top{
+	padding: 50px 0;
+}
+.footer-subs{
+	display: flex;
+/*	justify-content: space-between;*/
+	align-items: flex-start;
+
+}
+.footer-subs input{
+width: 65%;
+border: none;
+outline: none;
+padding: 20px;
+/*margin-left: 30px;*/
+}
+
+.footer-subs button{
+width: 23%;
+border: none;
+outline: none;
+padding: 20px 0;
+text-align: center;
+background: red;
+color: white;
+margin-left: 5px;
+}
+
+.footer-icons ul{
+	display: inline;
+	
+}
+.footer-icons ul li a i{
+	font-size: 24px;
+}
+
+.footer-middle{
+		border-top: 1px solid grey;
+		border-bottom: 1px solid grey;
+		padding: 50px 0;
+}
+.view-more{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.view-more button{
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	background: red;
+	color: white;
+	font-weight: 700;
+	border: 1px solid transparent;
+	transition: 0.3s;
+}
+.view-more button:hover{
+	
+	letter-spacing: 0.6px;
+	
+}
+.footer-middle a{
+	transition: 0.5s;
+	
+}
+.footer-middle a:hover{
+letter-spacing: 0.6px;
+text-decoration: underline !important;
+}
+
+@media only screen and (max-width:992px){
+
+.carousel-item img{
+	height: 300px;
+}
+
+}
+
+@media only screen and (max-width:768px){
+
+
+	.header-middle{
+		top: 0px;
+	}
+	.header-bottom{
+		margin-top: 0;
+	}
+}

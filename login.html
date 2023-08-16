@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CapitalShop</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+
+	<div class="row ">
+
+<div class="col-12 col-md-8 col-lg-6 login-form " id="login-form">
+	
+<h2>Login</h2>
+
+<p>Enter Login details to get access</p>
+
+<form>
+
+	<div class="inputs">
+
+<label>Username Or Email Address</label><br>
+<input type="text" name="Username" placeholder="Username / Email address" > <br>
+
+<label>Password</label><br>
+<input type="Password" name="Password" placeholder="Enter Password">
+
+</div>
+
+<div class="mt-1 d-sm-flex justify-content-between">
+
+<div>
+<input type="checkbox" name="sign"> <span style="font-weight: 400;">Keep me logged in</span>
+</div>
+
+<div>
+<span style="color: red;"><a href="" style="color: red; text-decoration: none;">Forget Password?</a></span>
+</div>
+
+</div>
+
+<div class="signup d-sm-flex justify-content-between">
+	<span>Don't have an account? <span onclick="show()" style="color: red; font-weight: 500; cursor: pointer;">Sign Up</span> here</span>
+	<button style="background: red;padding: 20px 40px;color: white;border: none;">Login</button>
+</div>
+
+</form>
+
+</div>
+
+
+<div class="col-12 col-md-8 col-lg-6 signup-form" id="signup-form">
+	
+<h2>Sign Up</h2>
+
+<p>Create your account to get full access</p>
+
+<form>
+
+	<div class="inputs">
+
+		<label>Full Name</label>
+<input type="text" name="fullname" placeholder="Enter full name">
+
+<label>Email Address</label>
+<input type="Email" name="Email" placeholder="Enter email address">
+
+<label>Password</label>
+<input type="Password" name="Password" placeholder="Enter Password">
+
+<label>Confirm Password</label>
+<input type="Password" name="Password" placeholder="Confirm Password">
+
+
+</div>
+
+
+<div class="signup d-sm-flex justify-content-between">
+	<span>Already have an account? <span onclick="hide()" style="color: red; font-weight: 500; cursor:pointer;">Login</span> here</span>
+	<button style="background: red;padding: 20px 40px;color: white; border: none;">Sign Up</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+	
+var login = document.getElementById('login-form');
+var signup = document.getElementById('signup-form');
+
+function show(){
+	signup.style.display = "block";
+	login.style.display = "none";
+}
+function hide(){
+	signup.style.display = "none";
+	login.style.display = "block";
+}
+</script>
+
+</body>
+</html>
